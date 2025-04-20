@@ -26,7 +26,7 @@ export default function Signup() {
         e.preventDefault();
         try {
             setLoading(true);
-            const response = await axios.post("http://localhost:3000/api/users/signup", formData);
+            const response = await axios.post("http://172.17.212.116:3000/api/users/signup", formData);
             console.log("response data", response.data);
             toast.success("Signup successful!");
             router.push('/frontend/login')
